@@ -1,0 +1,27 @@
+{
+  "name": "feature-cup-example",
+  "version": "1.0.0",
+  "description": "Sample use of the feature-cup npm package to create feature coverage reports on your JS test automation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "feature:default": "feature-cup",
+    "feature:html": "feature-cup --features ./features.json --tests \"./specs/**/*.spec.js\" --output html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscarcenteno/feature-cup-example.git"
+  },
+  "author": "Oscar Centeno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscarcenteno/feature-cup-example/issues"
+  },
+  "homepage": "https://github.com/oscarcenteno/feature-cup-example#readme",
+  "devDependencies": {
+    "@types/mocha": "^10.0.1",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "feature-cup": "^0.0.3"
+  }
+}
